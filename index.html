@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GEO-DASST | Portafolio de Geoinformación y Teledetección</title>
+  <meta name="description" content="Portafolio profesional de GEO-DASST: Ingeniería Ambiental, gestión de geoinformación, mapas 3D y teledetección." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="Logo.png" alt="GEO-DASST Logo" class="nav__logo-img" />
+      </a>
+      <ul class="nav__list">
+        <li><a href="#mapas-estaticos" class="nav__link">Mapas 3D Estáticos</a></li>
+        <li><a href="#mapas-interactivos" class="nav__link">Mapas 3D Interactivos</a></li>
+        <li><a href="#teledeteccion" class="nav__link">Teledetección</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__particles" id="hero-particles"></div>
+    <div class="hero__content container">
+      <p class="hero__tag">— Bienvenido al portafolio de</p>
+      <h1 class="hero__title">
+        GEO-<span class="accent">DASST</span>
+      </h1>
+      <p class="hero__subtitle">
+        Análisis geoespacial avanzado &bull; Teledetección &bull; Modelamiento 3D del territorio
+      </p>
+      <a href="#mapas-estaticos" class="hero__cta">Explorar Proyectos</a>
+    </div>
+
+    <!-- Wave separator -->
+    <div class="wave wave--hero">
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,64 C360,150 1080,0 1440,96 L1440,150 L0,150 Z" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== SECCIÓN 1: MAPAS 3D ESTÁTICOS ========== -->
+  <section class="section" id="mapas-estaticos">
+    <div class="container">
+      <h2 class="section__title">Mapas 3D Estáticos</h2>
+      <p class="section__subtitle">Modelos tridimensionales de alta resolución para análisis territorial.</p>
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge">Próximamente</span>
+            <h3 class="card__title">Modelo de Elevación Digital</h3>
+            <p class="card__text">Representación tridimensional del relieve terrestre generada a partir de datos LiDAR.</p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge">En desarrollo</span>
+            <h3 class="card__title">Mapa de Pendientes</h3>
+            <p class="card__text">Visualización del grado de inclinación del terreno con clasificación por rangos.</p>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge">Próximamente</span>
+            <h3 class="card__title">Hillshade Sombreado</h3>
+            <p class="card__text">Efecto de sombreado tridimensional sobre la morfología del terreno.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Wave separator -->
+    <div class="wave wave--section">
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,96 C480,0 960,150 1440,64 L1440,150 L0,150 Z" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== SECCIÓN 2: MAPAS 3D INTERACTIVOS ========== -->
+  <section class="section section--alt" id="mapas-interactivos">
+    <div class="container">
+      <h2 class="section__title">Mapas 3D Interactivos</h2>
+      <p class="section__subtitle">Experiencias inmersivas de navegación espacial en tiempo real.</p>
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge badge--dev">En desarrollo</span>
+            <h3 class="card__title">Vuelo Virtual sobre Cuenca</h3>
+            <p class="card__text">Recorrido interactivo en 3D sobre la cuenca hidrográfica con datos DEM.</p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge">Próximamente</span>
+            <h3 class="card__title">Explorador de Relieve</h3>
+            <p class="card__text">Herramienta web para explorar modelos 3D del relieve con controles de cámara.</p>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge badge--dev">En desarrollo</span>
+            <h3 class="card__title">Mapa Urbano 3D</h3>
+            <p class="card__text">Modelo tridimensional interactivo de infraestructura urbana y edificaciones.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Wave separator -->
+    <div class="wave wave--section">
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,48 C320,150 720,0 1080,100 C1260,140 1380,80 1440,64 L1440,150 L0,150 Z" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== SECCIÓN 3: TELEDETECCIÓN ========== -->
+  <section class="section" id="teledeteccion">
+    <div class="container">
+      <h2 class="section__title">Proyectos de Teledetección</h2>
+      <p class="section__subtitle">Análisis multiespectral y monitoreo ambiental desde plataformas satelitales.</p>
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge">Próximamente</span>
+            <h3 class="card__title">Índice NDVI Temporal</h3>
+            <p class="card__text">Serie multitemporal del índice de vegetación normalizado sobre cobertura agrícola.</p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge badge--dev">En desarrollo</span>
+            <h3 class="card__title">Detección de Cambios</h3>
+            <p class="card__text">Análisis multitemporal para identificar cambios en uso y cobertura del suelo.</p>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge">Próximamente</span>
+            <h3 class="card__title">Clasificación Supervisada</h3>
+            <p class="card__text">Mapa de cobertura terrestre generado mediante algoritmos de Machine Learning.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,40 C360,120 1080,0 1440,80 L1440,0 L0,0 Z" />
+      </svg>
+    </div>
+    <div class="container footer__content">
+      <p>&copy; 2026 <strong>GEO-DASST</strong>. Todos los derechos reservados.</p>
+      <p class="footer__tagline">Geoinformación &bull; Teledetección &bull; Ingeniería Ambiental</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
