@@ -414,11 +414,11 @@ img { max-width: 100%; display: block; }
   line-height: 1.55;
 }
 
-/* ---------- FOOTER ---------- */
+/* ---------- FOOTER & CONTACTO ---------- */
 .footer {
   position: relative;
   background: var(--bg-deep);
-  padding: 3rem 0 2rem;
+  padding: 6rem 0 2rem;
   text-align: center;
 }
 
@@ -441,17 +441,102 @@ img { max-width: 100%; display: block; }
   fill: var(--bg-primary);
 }
 
-.footer__content {
+.footer__contact {
+  margin-bottom: 3.5rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-.footer__content p {
+.footer__title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.5rem;
+}
+
+.footer__description {
+  font-size: 1.1rem;
+  color: var(--accent-cyan);
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-light);
+  background: rgba(11, 36, 53, 0.60);
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s var(--ease);
+}
+
+.contact-item i {
+  color: var(--accent-green);
+  font-size: 1.3rem;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-cyan);
+  color: var(--text-white);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(11, 36, 53, 0.60);
+  border: 1px solid var(--glass-border);
+  color: var(--text-light);
+  font-size: 1.3rem;
+  transition: all 0.3s var(--ease);
+}
+
+.social-icon:hover {
+  background: var(--gradient-accent);
+  color: var(--bg-deep);
+  transform: translateY(-5px) scale(1.05);
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  padding-top: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.footer__bottom p {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
 
-.footer__content strong {
+.footer__bottom strong {
   color: var(--accent-cyan);
 }
 
