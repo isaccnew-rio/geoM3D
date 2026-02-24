@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos de Teledetección | GEO-DASST</title>
+  <meta name="description" content="Galería de investigaciones, análisis multiespectral y proyectos de teledetección de GEO-DASST." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <style>
+    .section { padding: 4rem 0 5rem !important; }
+    .section__subtitle { margin-bottom: 2rem !important; }
+    .wave svg { height: 70px !important; }
+    .wave--hero svg { height: 90px !important; }
+    .wave--section svg { height: 90px !important; }
+    .footer { padding: 4.5rem 0 2rem !important; }
+    
+    /* Estilo del encabezado de esta página */
+    .page-header {
+      padding: 10rem 0 4rem;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 0%, rgba(0, 230, 118, 0.08) 0%, transparent 70%), var(--bg-deep);
+    }
+    .page-header__title {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 1rem;
+    }
+    .page-header__title .accent {
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .btn-back {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .btn-back:hover {
+      color: var(--accent-cyan);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo" title="Volver al Inicio">
+        <img src="Logo.png" alt="GEO-DASST Logo" class="nav__logo-img" />
+      </a>
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Inicio</a></li>
+        <li><a href="index.html#mapas-estaticos" class="nav__link">Estáticos</a></li>
+        <li><a href="index.html#mapas-interactivos" class="nav__link">Interactivos</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Proyectos de <span class="accent">Teledetección</span></h1>
+      <p class="section__subtitle">Análisis multiespectral, procesamiento de imágenes satelitales y monitoreo ambiental.</p>
+      <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Volver a la página principal</a>
+    </div>
+  </section>
+
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="grid">
+        
+        <article class="card revealed">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge">Próximamente</span>
+            <h3 class="card__title">Índice NDVI Temporal</h3>
+            <p class="card__text">Serie multitemporal del índice de vegetación normalizado sobre cobertura agrícola.</p>
+          </div>
+        </article>
+
+        <article class="card revealed">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge badge--dev">En desarrollo</span>
+            <h3 class="card__title">Detección de Cambios</h3>
+            <p class="card__text">Análisis multitemporal para identificar cambios en uso y cobertura del suelo.</p>
+          </div>
+        </article>
+
+        <article class="card revealed">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Espacio para Imagen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge">Próximamente</span>
+            <h3 class="card__title">Clasificación Supervisada</h3>
+            <p class="card__text">Mapa de cobertura terrestre generado mediante algoritmos de Machine Learning.</p>
+          </div>
+        </article>
+
+        <article class="card revealed">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Procesamiento Satelital</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge" style="background: rgba(139, 92, 246, 0.1); color: #a78bfa; border-color: rgba(139, 92, 246, 0.2);">Sentinel-2</span>
+            <h3 class="card__title">Desmezclado Espectral - Volcán El Altar</h3>
+            <p class="card__text">Cálculo de la superficie glaciar y nival mediante técnicas de desmezclado espectral y análisis de fracciones.</p>
+          </div>
+        </article>
+
+        <article class="card revealed">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Calidad Ambiental</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge" style="background: rgba(234, 179, 8, 0.1); color: #facc15; border-color: rgba(234, 179, 8, 0.2);">Sentinel-5P</span>
+            <h3 class="card__title">Monitoreo de Contaminantes Atmosféricos</h3>
+            <p class="card__text">Evaluación de concentraciones de gases traza (SO2, NO2, O3, CO) utilizando datos del sensor TROPOMI integrados en QGIS.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacto">
+    <div class="footer__wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,40 C360,120 1080,0 1440,80 L1440,0 L0,0 Z" />
+      </svg>
+    </div>
+    
+    <div class="container footer__content">
+      <div class="footer__contact">
+        <h2 class="footer__title">¿Trabajamos juntos?</h2>
+        <p class="footer__description">Organización y Consultoría Geoespacial | Riobamba, Ecuador</p>
+        
+        <div class="footer__info">
+          <a href="mailto:geoestudios19@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            geoestudios19@gmail.com
+          </a>
+          <a href="https://wa.me/593991783812" target="_blank" class="contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            +593 99 178 3812
+          </a>
+        </div>
+
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/pedro-jose-inca-novoa-5055b1154/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61575978058348" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/geo_dasst/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>&copy; 2026 <strong>GEO-DASST</strong>. Todos los derechos reservados.</p>
+        <p class="footer__tagline">Geoinformación &bull; Teledetección &bull; Ingeniería Ambiental</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
