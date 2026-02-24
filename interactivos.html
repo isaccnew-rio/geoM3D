@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapas 3D Interactivos | GEO-DASST</title>
+  <meta name="description" content="Galería de mapas tridimensionales interactivos y visores web generados por GEO-DASST." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <style>
+    .section { padding: 4rem 0 5rem !important; }
+    .section__subtitle { margin-bottom: 2rem !important; }
+    .wave svg { height: 70px !important; }
+    .wave--hero svg { height: 90px !important; }
+    .wave--section svg { height: 90px !important; }
+    .footer { padding: 4.5rem 0 2rem !important; }
+    
+    /* Estilo del encabezado de esta página */
+    .page-header {
+      padding: 10rem 0 4rem;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 0%, rgba(0, 191, 166, 0.08) 0%, transparent 70%), var(--bg-deep);
+    }
+    .page-header__title {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 1rem;
+    }
+    .page-header__title .accent {
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .btn-back {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .btn-back:hover {
+      color: var(--accent-cyan);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo" title="Volver al Inicio">
+        <img src="Logo.png" alt="GEO-DASST Logo" class="nav__logo-img" />
+      </a>
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Inicio</a></li>
+        <li><a href="index.html#mapas-estaticos" class="nav__link">Estáticos</a></li>
+        <li><a href="index.html#teledeteccion" class="nav__link">Teledetección</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Galería <span class="accent">Interactiva</span></h1>
+      <p class="section__subtitle">Experiencias inmersivas de navegación espacial y modelos 3D en tiempo real.</p>
+      <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Volver a la página principal</a>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="galeria">
+    <div class="container">
+      <div class="grid">
+        
+        <article class="card revealed">
+          <img src="Mapas/Interactivos/Penipe/captura-penipe.jpg" alt="Vista Previa de Penipe 3D" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px 8px 0 0;">
+          <div class="card__body">
+            <span class="card__badge" style="background: #059669; color: white;">Nuevo</span>
+            <h3 class="card__title">Modelo 3D - Cantón Penipe</h3>
+            <p class="card__text">Visualización interactiva del Modelo de Elevación Digital (DEM) y superficie del cantón Penipe, Chimborazo.</p>
+            <a href="Mapas/Interactivos/Penipe/index.html" target="_blank" style="display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #0A192F; border: 1px solid #00FFCC; color: #00FFCC; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s;">
+              🌍 Explorar Mapa en 3D
+            </a>
+          </div>
+        </article>
+
+        <article class="card revealed">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Próximo Visor</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge">Próximamente</span>
+            <h3 class="card__title">Explorador de Relieve Urbano</h3>
+            <p class="card__text">Herramienta web interactiva para recorrer modelos 3D de infraestructura con controles de cámara avanzados.</p>
+          </div>
+        </article>
+
+        <article class="card revealed">
+          <div class="card__img-placeholder">
+            <span class="card__img-label">Próximo Visor</span>
+          </div>
+          <div class="card__body">
+            <span class="card__badge badge--dev">En desarrollo</span>
+            <h3 class="card__title">Vuelo Virtual Hidrológico</h3>
+            <p class="card__text">Modelo tridimensional navegable enfocado en la visualización de cuencas y recursos hídricos.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacto">
+    <div class="footer__wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,40 C360,120 1080,0 1440,80 L1440,0 L0,0 Z" />
+      </svg>
+    </div>
+    
+    <div class="container footer__content">
+      <div class="footer__contact">
+        <h2 class="footer__title">¿Trabajamos juntos?</h2>
+        <p class="footer__description">Organización y Consultoría Geoespacial | Riobamba, Ecuador</p>
+        
+        <div class="footer__info">
+          <a href="mailto:geoestudios19@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            geoestudios19@gmail.com
+          </a>
+          <a href="https://wa.me/593991783812" target="_blank" class="contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            +593 99 178 3812
+          </a>
+        </div>
+
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/pedro-jose-inca-novoa-5055b1154/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61575978058348" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/geo_dasst/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>&copy; 2026 <strong>GEO-DASST</strong>. Todos los derechos reservados.</p>
+        <p class="footer__tagline">Geoinformación &bull; Teledetección &bull; Ingeniería Ambiental</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
