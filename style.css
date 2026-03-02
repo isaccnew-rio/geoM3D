@@ -177,6 +177,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* ---------- HERO ---------- */
+/* ---------- HERO ---------- */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -185,9 +186,10 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   text-align: center;
   background:
-    radial-gradient(ellipse at 30% 20%, rgba(0, 212, 255, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 70% 80%, rgba(0, 191, 166, 0.06) 0%, transparent 60%),
-    linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-primary) 50%, var(--bg-secondary) 100%);
+    /* 1. Capa superior: Degradado que empieza sutil y se oscurece hacia los servicios/botones */
+    linear-gradient(to bottom, rgba(7, 21, 37, 0.3) 0%, rgba(7, 21, 37, 0.85) 75%, var(--bg-primary) 100%),
+    /* 2. Capa inferior: Tu imagen de portada */
+    url('portada.png') center center / cover no-repeat;
   overflow: hidden;
 }
 
@@ -688,4 +690,5 @@ img { max-width: 100%; display: block; }
     height: 160px;
   }
 }
+
 
