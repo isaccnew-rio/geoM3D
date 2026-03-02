@@ -261,7 +261,60 @@ img { max-width: 100%; display: block; }
   transform: translateY(-3px);
   box-shadow: 0 8px 30px rgba(0, 212, 255, 0.35);
 }
+/* --- Servicios Destacados en Hero --- */
+.hero__services {
+  margin-top: 3.5rem;
+  opacity: 0;
+  /* El delay de 1.1s hace que aparezca justo después del botón principal */
+  animation: fadeInUp 0.8s var(--ease) 1.1s forwards;
+}
 
+.hero__services-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.2rem;
+}
+
+.hero__services-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.hero__service-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text-light);
+  background: rgba(11, 36, 53, 0.4);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.3s var(--ease);
+  cursor: default;
+}
+
+.hero__service-tag i {
+  color: var(--accent-teal);
+}
+
+.hero__service-tag:hover {
+  background: rgba(0, 212, 255, 0.1);
+  border-color: var(--accent-cyan);
+  color: var(--text-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15);
+}
 /* ---------- WAVE SEPARATORS ---------- */
 .wave {
   position: absolute;
@@ -635,3 +688,4 @@ img { max-width: 100%; display: block; }
     height: 160px;
   }
 }
+
